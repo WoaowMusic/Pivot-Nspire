@@ -1,0 +1,30 @@
+Define pivot(a,r,c)=
+Prgm
+©pivot(matx,row,col)
+dim(a)→l
+l[1]→m
+l[1]→n
+If r>m or c>n or r<0 or c<0 Then
+  Disp "Cannot Pivot: Invalid numbers."
+  Stop
+EndIf
+
+If a[r,c]=0 Then
+  Disp "Cannot Pivot: About 0"
+  Stop
+EndIf
+
+mRow(a[r,c]^(−1),a,r)→a
+
+For x,1,m,1
+  If x≠r
+    mRowAdd(−a[x,c],a,r,x)→a
+EndFor
+For x,1,m,1
+  For y,1,n,1
+    If abs(a[x,y])<0.001
+      0→a[x,y]
+  EndFor
+EndFor
+Disp a
+EndPrgm
