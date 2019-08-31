@@ -11,3 +11,6 @@ There is only one program on this with three arguments.
 pivot(x,2,2)
 ```
 Will pivot the matrix using row and column 2.
+
+# Other
+If there are any issues at all, please open a new issue on GitHub.
