@@ -2,15 +2,14 @@
 Pivot program for the TI-Nspire made using TI-Basic
 
 # Usage
-To use this program, run it on the calculator.  An example problem should be there already.
+To use this program, run it on the calculator.  An example problem should already exist.  Otherwise you can create the program from the source code.
 
-There is only one program on this with three arguments.
-
-```TI-Basic
-(Assumed declared 3x4 matrix) -> x
+```BASIC
+x:=[[1,2,3][4,5,6][7,8,9]]
 pivot(x,2,2)
 ```
+
 Will pivot the matrix using row and column 2.
 
 # Other
-If there are any issues at all, please open a new issue on GitHub.
+If there are any issues at all, please open a new issue on GitHub or contact me directly, either through GitHub or Reddit.
