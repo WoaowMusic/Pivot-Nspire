@@ -1,21 +1,43 @@
 Define pivot(a,r,c)=
 Prgm
 ©pivot(matx,row,col)
+
+©get matrix sizes
 dim(a)→l
+
+©Matrix row and column sizes (m = row, n = col)
 l[1]→m
 l[1]→n
-If r>m or c>n or r<0 or c<0 Then
-  Disp "Cannot Pivot: Invalid numbers."
+
+©Check bounds
+If r>m Then
+  Disp "Row cannot be greater than the rows in the matrix."
   Stop
 EndIf
 
+©Check bounds
+If c>n Then
+  Disp "Column cannot be greater than the columns in the matrix."
+  Stop
+EndIf
+
+©Check bounds
+if r<1 or c<1 Then
+  Disp "The rows and columns cannot be less than one"
+  Stop
+EndIf
+
+
+©If the answer is about zero
 If a[r,c]=0 Then
-  Disp "Cannot Pivot: About 0"
+  Disp "Cannot Pivot.  The answer is about zero."
   Stop
 EndIf
 
+©rowOp
 mRow(a[r,c]^(−1),a,r)→a
 
+©Matrix magic
 For x,1,m,1
   If x≠r
     mRowAdd(−a[x,c],a,r,x)→a
@@ -26,5 +48,7 @@ For x,1,m,1
       0→a[x,y]
   EndFor
 EndFor
+
+©Display the final result and end the program
 Disp a
 EndPrgm
