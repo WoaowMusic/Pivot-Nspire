@@ -17,7 +17,4 @@ Will pivot the matrix using row and column 2.
 # Other
 If there are any issues at all, please open a new issue on GitHub or contact me directly, either through GitHub or Reddit.
 
-# Teachers, instructors, and students
-Feel free to give this program to anyone and modify it however you like; however, I will not give support to those using modified copies of the program.
-
-For support, please open an issue on this GitHub page.
+I will not have support for this program as of 2020-06-19.
