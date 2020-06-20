@@ -19,3 +19,5 @@ If there are any issues at all, please open a new issue on GitHub or contact me 
 
 # Teachers, instructors, and students
 Feel free to give this program to anyone and modify it however you like; however, I will not give support to those using modified copies of the program.
+
+For support, please open an issue on this GitHub page.
